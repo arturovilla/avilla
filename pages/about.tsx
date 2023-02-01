@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Container from 'components/Container';
-import avatar from 'public/avatar.jpg';
-import avatarBW from 'public/avatar-bw.jpg';
+import avatar from '/headshot.jpg';
+import avatarBW from '/headshot.jpg';
 
 export default function About() {
   return (
@@ -71,7 +71,7 @@ export default function About() {
           </p>
           <h2>Headshots</h2>
           <div className="flex space-x-8">
-            <a href="/avatar.jpg">
+            <a href="/headshot.jpg">
               <Image
                 alt="Lee Robinson headshot"
                 width={400}
@@ -80,7 +80,7 @@ export default function About() {
                 className="rounded-md"
               />
             </a>
-            <a href="/avatar-bw.jpg">
+            <a href="/headshot.jpg">
               <Image
                 alt="Lee Robinson headshot"
                 width={400}
