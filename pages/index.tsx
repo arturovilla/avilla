@@ -14,23 +14,23 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                Lee Robinson
+                Arturo Villalobos Jr
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                VP of Developer Experience at{' '}
-                <span className="font-semibold">Vercel</span>
+                Software Engineer | Data Scientist | Aspiring Designer
+                <br/>
+                <span className="font-semibold">Houston, TX</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Helping developers build a faster web. Teaching about web
-                development, serverless, and React / Next.js.
+                Freelance Developer helping businesses meet their goals through hardwork, collaboration, and a shared interest in improving customer experiences.
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
               <Image
-                alt="Lee Robinson"
+                alt="Arturo Villalobos"
                 height={176}
                 width={176}
-                src="/avatar.jpg"
+                src="/headshot.jpg"
                 sizes="30vw"
                 priority
                 className="rounded-full filter grayscale"
@@ -39,31 +39,61 @@ export default function Home() {
           </div>
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            Featured Posts
+            Contact
           </h3>
-          <div className="flex gap-6 flex-col md:flex-row">
-            <BlogPostCard
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-              slug="style-guides-component-libraries-design-systems"
-              gradient="from-[#D8B4FE] to-[#818CF8]"
-            />
-            <BlogPostCard
-              title="Rust Is The Future of JavaScript Infrastructure"
-              slug="rust"
-              gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-            />
-            <BlogPostCard
-              title="Past, Present, and Future of React State Management"
-              slug="react-state-management"
-              gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-            />
-          </div>
+          <p className="text-gray-600 dark:text-gray-400 mb-16">
+                If you have a business problem, an idea, or just want to get an opinion I would love to hear from you! 
+          </p>
           <Link
-            href="/blog"
+            href="https://www.linkedin.com/in/rtvro/"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
           >
             <>
-              {'Read all posts'}
+              {'LinkedIn'}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="h-6 w-6 ml-1"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                />
+              </svg>
+            </>
+          </Link>
+          <Link
+            href="mailto: tembevilla@gmail.com"
+            className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
+          >
+            <>
+              {'Email'}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="h-6 w-6 ml-1"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
+                />
+              </svg>
+            </>
+          </Link>
+          <Link
+            href="tel: 432-312-5912"
+            className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
+          >
+            <>
+              {'Phone'}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -82,59 +112,18 @@ export default function Home() {
           </Link>
 
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-            Learn React & Next.js
+            About Me
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
-            Build and deploy a modern SaaS application using the most popular
-            open-source software. This course is 12 hours long and is completely
-            live streamed.
+            I am a chicano developer from Texas with a passion for web development, data science, and graphic design. 
+            I have helped businesses from various industries to improve their products and services by providing professional and prompt development services. 
           </p>
-          <VideoCard
-            index="01"
-            href="https://www.youtube.com/watch?v=MxR5I5_hOKk&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=2"
-            length="1:02:45"
-            title="Introduction to React 2025"
-          />
-          <VideoCard
-            index="02"
-            href="https://www.youtube.com/watch?v=AGl52moyISU&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=3"
-            length="54:22"
-            title="Firestore, Chakra UI, Absolute Imports"
-          />
-          <VideoCard
-            index="03"
-            href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
-            length="1:08:30"
-            title="Designing & Building the Dashboard"
-          />
-          <VideoCard
-            index="04"
-            href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
-            length="1:13:45"
-            title="Firebase Admin with Next.js + SWR"
-          />
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/playlist?list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1"
-            className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
-          >
-            Watch all videos
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="h-6 w-6 ml-1"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-              />
-            </svg>
-          </a>
+          <p className="text-gray-600 dark:text-gray-400 mb-4">
+            As a Texas A&M former student, I constantly strive to integrate the core values of 
+            respect, excellence, integrity, and selfless service into my professional work and business relationships. If this sounds good to you, shoot me a message and take the first step in solving your problem.
+          </p>
+          
+          
         </div>
       </Container>
     </Suspense>
